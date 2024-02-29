@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,28 @@
     <link rel="stylesheet" href="style.css">
     <title>Encriptador de texto</title>
 </head>
+
 <body>
-    <footer class="pieDePagina"></footer>
+    <div class="entradaTexto">
+        <input type="text" id="textoParaCambiar" placeholder="Ingrese el texto a encriptar"></input>
+    </div>
+
+    <div class="salidaTexto">
+        <textarea id="resultado" style="resize: none;" disabled>Aqui estará el resultado</textarea>
+    </div>
+
+    <div class="botones">
+        <button id="botonEncriptar" onclick="lectura();">Encriptar</button>
+        <button id="botonDesencriptar">Desencriptar</button>
+    </div>
+
+
+
+    <footer class="pieDePagina">
+        <p class="datosDelAutor"></p>
+    </footer>
+
     <script src="encriptador.js" defer></script>
 </body>
+
 </html>
