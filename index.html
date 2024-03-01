@@ -11,16 +11,20 @@
 
 <body>
     <div class="entradaTexto">
-        <input type="text" id="textoParaCambiar" placeholder="Ingrese el texto a encriptar"></input>
+        <textarea id="textoParaCambiar" placeholder="Ingrese el texto a encriptar"}
+        style="resize: none;"></textarea>
+        rows="30" cols="60"
     </div>
 
     <div class="salidaTexto">
         <textarea id="resultado" style="resize: none;" disabled>Aqui estará el resultado</textarea>
+        rows="30" cols="55"
+        <button class="boton" id="copiar">Copiar al portapapeles</button>
     </div>
 
-    <div class="botones">
-        <button id="botonEncriptar" onclick="lectura();">Encriptar</button>
-        <button id="botonDesencriptar">Desencriptar</button>
+    <div>
+        <button class="boton" id="botonEncriptar" onclick="encriptar();">Encriptar</button>
+        <button class="boton" id="botonDesencriptar" onclick="desencriptar();">Desencriptar</button>
     </div>
 
 
