@@ -2,31 +2,90 @@
 
 Estructura vacia con el orden del html para crear estilos más tarde
 */
-.entradaTexto{
 
-};
-
-.salidaTexto{
-
-};
-
-.botones{
-
-};
-
-#botonEncriptar{
-
-};
-
-#botonDesencriptar{
-
+html{
+    background-color: #F3F5FC;
 }
 
-.pieDePagina{
+header, footer{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5em;
+}
 
-};
+.detective{
+    height: 5%;
+    width: 5%;
+}
 
-.datosDelAutor{
-    
+.entradaTexto{
+    display: inline-block;
+    position: relative;
+}
+
+#copiar{
+    display: inline-block;
+}
+
+.salidaTexto{
+    display: inline-block;
+    position: relative;
+}
+
+#lupa{
+    position: absolute;
+    height: 40%;
+    top: 20%;
+    right: 40%;
+}
+
+#acompañaLupa{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+}
+
+.texto{
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5em;
+    color: #0A3871;
+}
+
+.titulo, .autor{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.condicionesUso{
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+    display: inline;
+    background-color: white;
+}
+#botonEncriptar, #botonDesencriptar{
+    display: inline-block;
+    width: 10em;
+    height: 2em;
+}
+
+.salidaTexto{
+    position: relative;
+}
+
+#copiar{
+    position: absolute;
+    top: 85%;
+    right: 30%;
+    display: none;
+}
+
+.condicionesUso::before{
+    content: "❗";
+}
+
+.autor{
+    padding: 0.5em;
 }
 

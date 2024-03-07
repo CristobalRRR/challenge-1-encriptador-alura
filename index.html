@@ -3,34 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
     <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <header>
+    
+    <h1 class="texto titulo">Encriptador de texto</h1><img class="detective" src="imagenes/detective.png" alt="Detective">
+    </header>
+
+    <main>
     <div class="entradaTexto">
-        <textarea id="textoParaCambiar" placeholder="Ingrese el texto a encriptar"}
-        style="resize: none;"></textarea>
-        rows="30" cols="60"
+        <textarea class="texto" id="textoParaCambiar" placeholder="Ingrese el texto a encriptar"}
+        style="resize: none;" rows="8" cols="70"></textarea>
     </div>
-
+    
     <div class="salidaTexto">
-        <textarea id="resultado" style="resize: none;" disabled>Aqui estará el resultado</textarea>
-        rows="30" cols="55"
-        <button class="boton" id="copiar">Copiar al portapapeles</button>
+        <textarea class="texto" id="resultado" style="resize: none;" disabled
+        rows="8" cols="60"></textarea>
+        <img src="imagenes/lupa.png" id="lupa" alt="imagen de una lupa">
+        <p class="texto" id="acompañaLupa">Los resultados se muestran aquí</p>
+        <button class="boton texto" id="copiar" onclick="copiaPortapeles()">Copiar al portapapeles</button>
     </div>
 
-    <div>
-        <button class="boton" id="botonEncriptar" onclick="encriptar();">Encriptar</button>
-        <button class="boton" id="botonDesencriptar" onclick="desencriptar();">Desencriptar</button>
+    <p class="condicionesUso">Solo se aceptan letras minúsculas y el espacio, otros caracteres no
+        estan permitidos.</p>
+   
+
+    <div class="botonesDeApp">
+        <button class="boton texto" id="botonEncriptar" onclick="encriptar();">Encriptar</button>
+        <button class="boton texto" id="botonDesencriptar" onclick="desencriptar();">Desencriptar</button>
     </div>
+</main>
 
 
-
-    <footer class="pieDePagina">
-        <p class="datosDelAutor"></p>
+    <footer>
+        <p class="texto autor">Cristóbal Ramírez 2024</p>
     </footer>
 
     <script src="encriptador.js" defer></script>
