@@ -62,13 +62,34 @@ header, footer{
     font-style: italic;
     font-weight: bold;
     display: inline;
-    background-color: white;
 }
 #botonEncriptar, #botonDesencriptar{
     display: inline-block;
     width: 10em;
     height: 2em;
+    margin: 0.5em;
 }
+
+#botonEncriptar:hover{
+    background-color: rgba(255, 0, 0, 0.8);
+    font-weight: bolder;
+}
+
+#botonEncriptar:active{
+    color: white;
+    background-color: black;
+}
+
+#botonDesencriptar:hover{
+    background-color: rgba(0,255,0,0.8);
+    font-weight: bolder;
+}
+
+#botonDesencriptar:active{
+    color: black;
+    background-color: white;
+}
+
 
 .salidaTexto{
     position: relative;
@@ -76,7 +97,7 @@ header, footer{
 
 #copiar{
     position: absolute;
-    top: 85%;
+    top: 80%;
     right: 30%;
     display: none;
 }
@@ -88,4 +109,3 @@ header, footer{
 .autor{
     padding: 0.5em;
 }
-
